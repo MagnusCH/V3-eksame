@@ -74,6 +74,43 @@ main#index {
             width: 100%;
         }
     }
+    .formGroup {
+        padding: 10px;
+        span {
+            font-size: 20px;
+        }
+        input {
+            background-color: white;
+            padding: 5px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 97%;
+            height: 25px;
+        }
+        textarea {
+            background-color: white;
+            padding: 5px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 97%;
+            height: 40px;
+        }
+    }
+    .btn-indsaet {
+        margin-left: 10px;
+        input.button-primary {
+            background-color: white;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 150px;
+        }
+        input.button-primary:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 main#loginsite {
@@ -98,7 +135,6 @@ main#loginsite {
         font-size: 20px;
         width: 150px;
     }
-    
     button:hover {
         text-decoration: underline;
     }

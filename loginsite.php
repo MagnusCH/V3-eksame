@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!-- Keywords -->
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <!-- Description (max 150 chars) -->
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dolorum, asperiores fuga magni magnam veritatis voluptates unde optio, recusandae.">
+    <!-- Author -->
+    <meta name="author" content="Magnus Christensen">
     <!-- veiwport -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- Font-awesome -->
@@ -13,7 +19,23 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css"> </head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-92498399-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
 
 <body>
     <!-- Header -->
@@ -60,6 +82,18 @@
             </div>
         </div>
     </main>
+    <!-- Footer -->
+    <footer id="index">
+        <div class="footer-container">
+            <hr>
+            <div class="row center-xs">
+                <div class="col-xs-12">
+                    <p>&copy; 2017-Wilderness</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
 </html>

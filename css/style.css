@@ -75,12 +75,51 @@ main#index article h1 {
 main#index article img {
   width: 100%; }
 
-/* line 80, V3-eksame/css/style.scss */
+/* line 77, V3-eksame/css/style.scss */
+main#index .formGroup {
+  padding: 10px; }
+  /* line 79, V3-eksame/css/style.scss */
+  main#index .formGroup span {
+    font-size: 20px; }
+  /* line 82, V3-eksame/css/style.scss */
+  main#index .formGroup input {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 97%;
+    height: 25px; }
+  /* line 90, V3-eksame/css/style.scss */
+  main#index .formGroup textarea {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    width: 97%;
+    height: 40px; }
+
+/* line 99, V3-eksame/css/style.scss */
+main#index .btn-indsaet {
+  margin-left: 10px; }
+  /* line 101, V3-eksame/css/style.scss */
+  main#index .btn-indsaet input.button-primary {
+    background-color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 150px; }
+  /* line 110, V3-eksame/css/style.scss */
+  main#index .btn-indsaet input.button-primary:hover {
+    text-decoration: underline; }
+
+/* line 117, V3-eksame/css/style.scss */
 main#loginsite p {
   margin: 0;
   font-weight: bold; }
 
-/* line 84, V3-eksame/css/style.scss */
+/* line 121, V3-eksame/css/style.scss */
 main#loginsite input.log-in-box {
   background-color: white;
   padding: 5px;
@@ -89,7 +128,7 @@ main#loginsite input.log-in-box {
   width: 97%;
   height: 25px; }
 
-/* line 92, V3-eksame/css/style.scss */
+/* line 129, V3-eksame/css/style.scss */
 main#loginsite button {
   background-color: white;
   padding: 5px;
@@ -99,17 +138,17 @@ main#loginsite button {
   font-size: 20px;
   width: 150px; }
 
-/* line 102, V3-eksame/css/style.scss */
+/* line 138, V3-eksame/css/style.scss */
 main#loginsite button:hover {
   text-decoration: underline; }
 
-/* line 107, V3-eksame/css/style.scss */
+/* line 143, V3-eksame/css/style.scss */
 .footer-container {
   margin: auto;
   max-width: 1000px;
   width: 100%; }
 
-/* line 114, V3-eksame/css/style.scss */
+/* line 150, V3-eksame/css/style.scss */
 footer#index p {
   text-transform: uppercase; }
 

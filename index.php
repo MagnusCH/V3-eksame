@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <!-- Keywords -->
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
+    <!-- Description (max 150 chars) -->
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident dolorum, asperiores fuga magni magnam veritatis voluptates unde optio, recusandae.">
+    <!-- Author -->
+    <meta name="author" content="Magnus Christensen">
     <!-- veiwport -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- Font-awesome -->
@@ -13,7 +19,23 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css"> </head>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-92498399-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
 
 <body>
     <!-- Header -->
@@ -57,18 +79,82 @@
                 </div>
                 <!-- Col 2 -->
                 <div class="col-xs-9">
+                    <!-- Article -->
+                    <article id="form">
+                        <!-- Form -->
+                        <!-- action:"insert.php" Når du har udfyldt din formular og trykket på indsæt hvad skal der så ske, vi ryger over til insert.php-->
+                        <form action="insert.php" method="get">
+                            <!-- FormGroup-class /heading -->
+                            <div class="formGroup">
+                                <h1>Opret et nyt indlæg</h1>
+                                <!-- Label-->
+                                <label id="heading" for="heading"> <span>Titel:</span> </label>
+                                <!-- Lable end -->
+                                <br>
+                                <!-- Input -->
+                                <input type="text" id="heading" name="heading" placeholder="Titel på dit indlæg">
+                                <!-- Imput end -->
+                            </div>
+                            <!-- FormGroup-class /heading end -->
+                            <!-- -->
+                            <!-- FormGroup-class /imgSrc -->
+                            <div class="formGroup">
+                                <!-- Label -->
+                                <label for="imgSrc"><span>Billed navn:</label></span>
+                                    <!-- Lable end -->
+                                    <br>
+                                    <!-- Input -->
+                                    <input class="u-full-width" type="text" id="imgSrc" name="imgSrc" placeholder="Navn på billede uden .jpg">
+                                    <!-- Imput end -->
+                            </div>
+                            <!-- FormGroup-class /imgSrc end -->
+                            <!-- -->
+                            <!-- FormGroup-class /imgAlt -->
+                            <div class="formGroup">
+                                <!-- Label -->
+                                <label for="imgAlt"> <span>Billede alt tekst</span></label>
+                                <!-- Lable end -->
+                                <br>
+                                <!-- Input -->
+                                <input class="u-full-width" type="text" id="imgAlt" name="imgAlt" placeholder="billedets alt tekst">
+                                <!-- Imput end -->
+                            </div>
+                            <!-- FormGroup-class /imgAlt end -->
+                            <!-- -->
+                            <!-- FormGroup-class /articleText -->
+                            <div class="formGroup">
+                                <!-- Label -->
+                                <label for="articleText"><span>Indlægets tekst</span></label>
+                                <!-- Lable end -->
+                                <br>
+                                <!-- Textarea -->
+                                <textarea class="u-full-width" id "articleText" name="articleText" placeholder="Indlægets tekst"></textarea>
+                                <!-- Textarea end -->
+                            </div>
+                            <!-- FormGroup-class /imgSrc end -->
+                            <!-- -->
+                            <!-- Indsæt -->
+                            <div class="btn-indsaet">
+                                <input class="button-primary" type="submit" value="Udgiv indlæg"> </div>
+                            <!-- Indsæt end -->
+                        </form>
+                        <!-- Form end -->
+                    </article>
+                    <!-- Article -->
                     <article>
                         <h1>Vores nye lænestoli egetræ og kernelæder</h1> <img src="img/l%C3%A6nestol.jpg" alt="Laeder laenestol">
                         <p>Skrevet af line den 24.august, 2017</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sequi quo doloribus, ex, perferendis rerum tempore quas ipsam cumque accusantium eaque veniam facere. Voluptas itaque dolorum, quam voluptatum, quis possimus!</p>
                     </article>
                     <hr>
+                    <!-- Article -->
                     <article>
                         <h1>Mit plante eksperiment</h1> <img src="img/mit_plante_eksperiment.jpg" alt="Plante eksperiment">
                         <p>Skrevet af line den 24.august, 2017</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur, incidunt optio id, asperiores voluptatum. Aperiam numquam error minus nihil tenetur illo, soluta maiores et dolores libero aliquid quo accusamus.</p>
                     </article>
                     <hr>
+                    <!-- Article -->
                     <article>
                         <h1>Min urban jungle baggårds make-over</h1> <img src="img/urban_jungle_make-over.jpg" alt="Urban jungle baggårds">
                         <p>Skrevet af line den 24.august, 2017</p>
@@ -76,10 +162,12 @@
                     </article>
                 </div>
             </div>
-            <hr> </div>
+        </div>
     </main>
+    <!-- Footer -->
     <footer id="index">
         <div class="footer-container">
+            <hr>
             <div class="row center-xs">
                 <div class="col-xs-12">
                     <p>&copy; 2017-Wilderness</p>
