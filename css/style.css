@@ -1,2 +1,116 @@
+/* line 1, V3-eksame/css/style.scss */
+body {
+  font-family: Helvetica, sans-serif; }
+
+/* line 5, V3-eksame/css/style.scss */
+.header-container {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%; }
+
+/* line 11, V3-eksame/css/style.scss */
+.float-right {
+  float: right; }
+
+/* line 15, V3-eksame/css/style.scss */
+.current {
+  background-color: #e7e7e7; }
+
+/* line 20, V3-eksame/css/style.scss */
+nav#main ul {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  margin: 0;
+  padding: 0; }
+
+/* line 26, V3-eksame/css/style.scss */
+nav#main li {
+  list-style: none;
+  display: inline-block;
+  padding: 1%; }
+
+/* line 31, V3-eksame/css/style.scss */
+nav#main li:hover {
+  text-decoration: underline; }
+
+/* line 34, V3-eksame/css/style.scss */
+nav#main a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #777;
+  text-transform: uppercase;
+  line-height: 30px; }
+
+/* line 43, V3-eksame/css/style.scss */
+.main-container {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 30px; }
+
+/* line 51, V3-eksame/css/style.scss */
+main#index img {
+  width: 100%; }
+
+/* line 55, V3-eksame/css/style.scss */
+main#index aside a {
+  text-decoration: none; }
+  /* line 57, V3-eksame/css/style.scss */
+  main#index aside a i {
+    color: black; }
+  /* line 60, V3-eksame/css/style.scss */
+  main#index aside a i:hover {
+    color: blue; }
+
+/* line 65, V3-eksame/css/style.scss */
+main#index p {
+  font-size: 12px; }
+
+/* line 69, V3-eksame/css/style.scss */
+main#index article h1 {
+  text-transform: uppercase;
+  font-size: 20px; }
+
+/* line 73, V3-eksame/css/style.scss */
+main#index article img {
+  width: 100%; }
+
+/* line 80, V3-eksame/css/style.scss */
+main#loginsite p {
+  margin: 0;
+  font-weight: bold; }
+
+/* line 84, V3-eksame/css/style.scss */
+main#loginsite input.log-in-box {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 97%;
+  height: 25px; }
+
+/* line 92, V3-eksame/css/style.scss */
+main#loginsite button {
+  background-color: white;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 150px; }
+
+/* line 102, V3-eksame/css/style.scss */
+main#loginsite button:hover {
+  text-decoration: underline; }
+
+/* line 107, V3-eksame/css/style.scss */
+.footer-container {
+  margin: auto;
+  max-width: 1000px;
+  width: 100%; }
+
+/* line 114, V3-eksame/css/style.scss */
+footer#index p {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
