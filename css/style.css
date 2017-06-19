@@ -109,21 +109,21 @@ main#index .formGroup {
   main#index .formGroup span {
     font-size: 20px; }
   /* line 109, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-  main#index .formGroup input {
-    background-color: white;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    width: 97%;
-    height: 25px; }
+  main#index .formGroup input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
   /* line 117, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#index .formGroup textarea {
-    background-color: white;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    width: 97%;
-    height: 40px; }
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; }
 
 /* line 127, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index .btn-indsaet input.button-primary {
@@ -190,14 +190,14 @@ footer#index p {
   li {
     width: 100%;
     padding: 1% 0 !important; }
-  /* line 194, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 193, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   .header-container {
     padding: 0 0 0 1%; }
-  /* line 198, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 196, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   .float-right {
     float: none; }
-  /* line 201, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 199, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   .main-container {
-    padding: 0 0 0 1%; } }
+    padding: 0 1%; } }
 
 /*# sourceMappingURL=style.css.map */

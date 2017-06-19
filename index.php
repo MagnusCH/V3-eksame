@@ -133,7 +133,7 @@
                                     <!-- FormGroup-class /imgAlt -->
                                     <div class="formGroup">
                                         <!-- Label -->
-                                        <label for="imgAlt"> <span>Billede alt tekst</span></label>
+                                        <label for="imgAlt"> <span>Billede alt tekst:</span></label>
                                         <!-- Lable end -->
                                         <br>
                                         <!-- Input -->
@@ -145,7 +145,7 @@
                                     <!-- FormGroup-class /articleText -->
                                     <div class="formGroup">
                                         <!-- Label -->
-                                        <label for="articleText"><span>Indlægets tekst</span></label>
+                                        <label for="articleText"><span>Indlægets tekst:</span></label>
                                         <!-- Lable end -->
                                         <br>
                                         <!-- Textarea -->
