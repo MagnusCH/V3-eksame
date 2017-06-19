@@ -1,5 +1,4 @@
 <?php session_start();
-
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -46,7 +45,9 @@
             <div class="header-container">
                 <!-- row -->
                 <div class="row center-xs">
-                    <div class="col-xs-12"> <img src="img/header_img.jpg" alt="Copenhagen Wilderness"> </div>
+                    <div class="col-xs-12">
+                        <a href="index.php"> <img src="img/header_img.jpg" alt="Copenhagen Wilderness"> </a>
+                    </div>
                 </div>
                 <!-- row -->
                 <div class="row">
@@ -70,13 +71,11 @@
                         <!-- Form login -->
                         <form action="checkUser.php" method="post">
                             <!-- Brugernavn -->
-                            <p>Brugernavn</p>
-                            <br>
-                            <input class="log-in-box" type="text" id="user" name="formUsername" placeholder="Indtast dit brugernavn">
+                            <label for="frame">Brugernavn:</label>
+                            <input type="text" id="user" name="formUsername" placeholder="Indtast dit brugernavn">
                             <!-- Password -->
-                            <p>Password</p>
-                            <br>
-                            <input class="log-in-box" type="password" id="pass" name="formPassword" placeholder="Indtast dit password">
+                            <label for="frame">Password:</label>
+                            <input type="password" id="pass" name="formPassword" placeholder="Indtast dit password">
                             <br>
                             <!-- button login -->
                             <button id="log-in" type="submit" value="Log ind">Log ind</button>

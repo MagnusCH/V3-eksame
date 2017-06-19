@@ -16,8 +16,10 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)){ ?>
     <article>
         <hr>
         <h1><?php echo $row['heading'] ?></h1> <img src="img/<?php echo $row['imgSrc'] ?>.jpg" alt="<?php echo $row['imgAlt'] ?>">
-        <p class="date">
-            <?php echo $row['time'] ?>
+        <p class="author"> <span class="author-C">Skrevet af</span>
+            <?php echo $_SESSION['username']; ?> <span class="author-C">Den</span>
+                <?php echo date('D-d-F-Y');
+            //('r')?>
         </p>
         <p>
             <?php echo $row['articleText']  ?>

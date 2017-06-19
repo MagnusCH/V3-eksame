@@ -44,8 +44,10 @@
         <header id="main">
             <div class="header-container">
                 <!-- row -->
-                <div class="row center-xs">
-                    <div class="col-xs-12"> <img src="img/header_img.jpg" alt="Copenhagen Wilderness"> </div>
+                <div class="row ">
+                    <div class="col-xs-12">
+                        <a href="index.php"> <img src="img/header_img.jpg" alt="Copenhagen Wilderness"> </a>
+                    </div>
                 </div>
                 <!-- row -->
                 <div class="row">
@@ -56,7 +58,19 @@
                                 <li class="current"><a href="index.php">Home</a></li>
                                 <li><a href="#">Planter</a></li>
                                 <li><a href="#">Indretning</a></li>
-                                <li class="float-right"><a href="loginsite.php">Log ind</a></li>
+                                <?php 
+                        //tjekker om username er sat og den ikke er tom
+                        //hvis bruger er logget ind skal nedstående vises
+                        if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
+                         ?>
+                                    <li class="float-right"><span id="logud">Hej,
+                                        <?php echo $_SESSION['username']; ?></span> <a href="logout.php?logout=true">, Log ud</a> </li>
+                                    <?php   
+                        }else {
+                        ?>
+                                        <!-- Hvis bruger ikke er logget ind skal nedstående vises -->
+                                        <li class="float-right"><a href="loginsite.php">Log ind</a></li>
+                                        <?php } ?>
                             </ul>
                         </nav>
                     </div>
@@ -66,7 +80,7 @@
             <div class="main-container">
                 <div class="row">
                     <!-- Col 1 -->
-                    <div class="col-xs-3">
+                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                         <!-- Aside -->
                         <aside><img src="img/frk_overspringshandling.jpg" alt="Billed af pige i sort hat">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam cumque quasi doloribus optio a illum minima porro consectetur ad distinctio. Consequuntur laborum cumque ipsum optio quis excepturi officia unde dignissimos.</p>
@@ -80,97 +94,103 @@
                         </aside>
                     </div>
                     <!-- Col 2 -->
-                    <div class="col-xs-9">
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                         <!-- Article -->
-                        <article id="form">
-                            <!-- Form -->
-                            <!-- action:"insert.php" Når du har udfyldt din formular og trykket på indsæt hvad skal der så ske, vi ryger over til insert.php-->
-                            <form action="insert.php" method="get">
-                                <!-- FormGroup-class /heading -->
-                                <div class="formGroup">
-                                    <h1>Opret et nyt indlæg</h1>
-                                    <!-- Label-->
-                                    <label id="heading" for="heading"> <span>Titel:</span> </label>
-                                    <!-- Lable end -->
-                                    <br>
-                                    <!-- Input -->
-                                    <input type="text" id="heading" name="heading" placeholder="Titel på dit indlæg">
-                                    <!-- Imput end -->
-                                </div>
-                                <!-- FormGroup-class /heading end -->
-                                <!-- -->
-                                <!-- FormGroup-class /imgSrc -->
-                                <div class="formGroup">
-                                    <!-- Label -->
-                                    <label for="imgSrc"><span>Billed navn:</label></span>
+                        <?php 
+                        //tjekker om username er sat og den ikke er tom
+                        //hvis bruger er logget ind skal nedstående vises
+                        if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
+                         ?>
+                            <article id="form">
+                                <!-- Form -->
+                                <!-- action:"insert.php" Når du har udfyldt din formular og trykket på indsæt hvad skal der så ske, vi ryger over til insert.php-->
+                                <form action="insert.php" method="get">
+                                    <!-- FormGroup-class /heading -->
+                                    <div class="formGroup">
+                                        <h1>Opret et nyt indlæg</h1>
+                                        <!-- Label-->
+                                        <label id="heading" for="heading"> <span>Titel:</span> </label>
                                         <!-- Lable end -->
                                         <br>
                                         <!-- Input -->
-                                        <input class="u-full-width" type="text" id="imgSrc" name="imgSrc" placeholder="Navn på billede uden .jpg">
+                                        <input type="text" id="heading" name="heading" placeholder="Titel på dit indlæg">
                                         <!-- Imput end -->
-                                </div>
-                                <!-- FormGroup-class /imgSrc end -->
-                                <!-- -->
-                                <!-- FormGroup-class /imgAlt -->
-                                <div class="formGroup">
-                                    <!-- Label -->
-                                    <label for="imgAlt"> <span>Billede alt tekst</span></label>
-                                    <!-- Lable end -->
-                                    <br>
-                                    <!-- Input -->
-                                    <input class="u-full-width" type="text" id="imgAlt" name="imgAlt" placeholder="billedets alt tekst">
-                                    <!-- Imput end -->
-                                </div>
-                                <!-- FormGroup-class /imgAlt end -->
-                                <!-- -->
-                                <!-- FormGroup-class /articleText -->
-                                <div class="formGroup">
-                                    <!-- Label -->
-                                    <label for="articleText"><span>Indlægets tekst</span></label>
-                                    <!-- Lable end -->
-                                    <br>
-                                    <!-- Textarea -->
-                                    <textarea class="u-full-width" id "articleText" name="articleText" placeholder="Indlægets tekst"></textarea>
-                                    <!-- Textarea end -->
-                                </div>
-                                <!-- FormGroup-class /imgSrc end -->
-                                <!-- -->
-                                <!-- Indsæt -->
-                                <div class="btn-indsaet">
-                                    <input class="button-primary" type="submit" value="Udgiv indlæg"> </div>
-                                <!-- Indsæt end -->
-                            </form>
-                            <!-- Form end -->
-                        </article>
-                        <article>
-                            <?php
+                                    </div>
+                                    <!-- FormGroup-class /heading end -->
+                                    <!-- -->
+                                    <!-- FormGroup-class /imgSrc -->
+                                    <div class="formGroup">
+                                        <!-- Label -->
+                                        <label for="imgSrc"><span>Billed navn:</label></span>
+                                            <!-- Lable end -->
+                                            <br>
+                                            <!-- Input -->
+                                            <input class="u-full-width" type="text" id="imgSrc" name="imgSrc" placeholder="Navn på billede uden .jpg">
+                                            <!-- Imput end -->
+                                    </div>
+                                    <!-- FormGroup-class /imgSrc end -->
+                                    <!-- -->
+                                    <!-- FormGroup-class /imgAlt -->
+                                    <div class="formGroup">
+                                        <!-- Label -->
+                                        <label for="imgAlt"> <span>Billede alt tekst</span></label>
+                                        <!-- Lable end -->
+                                        <br>
+                                        <!-- Input -->
+                                        <input class="u-full-width" type="text" id="imgAlt" name="imgAlt" placeholder="billedets alt tekst">
+                                        <!-- Imput end -->
+                                    </div>
+                                    <!-- FormGroup-class /imgAlt end -->
+                                    <!-- -->
+                                    <!-- FormGroup-class /articleText -->
+                                    <div class="formGroup">
+                                        <!-- Label -->
+                                        <label for="articleText"><span>Indlægets tekst</span></label>
+                                        <!-- Lable end -->
+                                        <br>
+                                        <!-- Textarea -->
+                                        <textarea class="u-full-width" id "articleText" name="articleText" placeholder="Indlægets tekst"></textarea>
+                                        <!-- Textarea end -->
+                                    </div>
+                                    <!-- FormGroup-class /imgSrc end -->
+                                    <!-- -->
+                                    <!-- Indsæt -->
+                                    <div class="btn-indsaet">
+                                        <input class="button-primary" type="submit" value="Udgiv indlæg"> </div>
+                                    <!-- Indsæt end -->
+                                </form>
+                                <!-- Form end -->
+                            </article>
+                            <?php } ?>
+                                <article>
+                                    <?php
                         // inkludere fetchDb.php
                         //tager indhold fra en anden fil (fetchDb.php) og ligger det her ind
                         include "fetchDb.php";
                         
                         ?>
-                        </article>
-                        <hr>
-                        <!-- Article -->
-                        <article>
-                            <h1>Vores nye lænestoli egetræ og kernelæder</h1> <img src="img/l%C3%A6nestol.jpg" alt="Laeder laenestol">
-                            <p>Skrevet af line den 24.august, 2017</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sequi quo doloribus, ex, perferendis rerum tempore quas ipsam cumque accusantium eaque veniam facere. Voluptas itaque dolorum, quam voluptatum, quis possimus!</p>
-                        </article>
-                        <hr>
-                        <!-- Article -->
-                        <article>
-                            <h1>Mit plante eksperiment</h1> <img src="img/mit_plante_eksperiment.jpg" alt="Plante eksperiment">
-                            <p>Skrevet af line den 24.august, 2017</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur, incidunt optio id, asperiores voluptatum. Aperiam numquam error minus nihil tenetur illo, soluta maiores et dolores libero aliquid quo accusamus.</p>
-                        </article>
-                        <hr>
-                        <!-- Article -->
-                        <article>
-                            <h1>Min urban jungle baggårds make-over</h1> <img src="img/urban_jungle_make-over.jpg" alt="Urban jungle baggårds">
-                            <p>Skrevet af line den 24.august, 2017</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto est itaque quidem. Nisi animi maiores ex, placeat facilis doloribus ut. Praesentium quaerat consectetur eos, magnam. Aspernatur in provident aliquid.</p>
-                        </article>
+                                </article>
+                                <hr>
+                                <!-- Article -->
+                                <article>
+                                    <h1>Vores nye lænestol i egetræ og kernelæder</h1> <img src="img/l%C3%A6nestol.jpg" alt="Laeder laenestol">
+                                    <p class="author"> <span class="author-C">Skrevet af </span>Line <span class="author-C">den </span>24.august, 2017</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos sequi quo doloribus, ex, perferendis rerum tempore quas ipsam cumque accusantium eaque veniam facere. Voluptas itaque dolorum, quam voluptatum, quis possimus!</p>
+                                </article>
+                                <hr>
+                                <!-- Article -->
+                                <article>
+                                    <h1>Mit plante eksperiment</h1> <img src="img/mit_plante_eksperiment.jpg" alt="Plante eksperiment">
+                                    <p class="author"> <span class="author-C">Skrevet af </span>Line <span class="author-C">den </span>24.august, 2017</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur, incidunt optio id, asperiores voluptatum. Aperiam numquam error minus nihil tenetur illo, soluta maiores et dolores libero aliquid quo accusamus.</p>
+                                </article>
+                                <hr>
+                                <!-- Article -->
+                                <article>
+                                    <h1>Min urban jungle baggårds make-over</h1> <img src="img/urban_jungle_make-over.jpg" alt="Urban jungle baggårds">
+                                    <p class="author"> <span class="author-C">Skrevet af </span>Line <span class="author-C">den </span>24.august, 2017</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto est itaque quidem. Nisi animi maiores ex, placeat facilis doloribus ut. Praesentium quaerat consectetur eos, magnam. Aspernatur in provident aliquid.</p>
+                                </article>
                     </div>
                 </div>
             </div>

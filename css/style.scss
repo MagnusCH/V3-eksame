@@ -1,153 +1,204 @@
-body {
-    font-family: Helvetica, sans-serif;
-}
-
-.header-container {
-    margin: auto;
-    max-width: 1000px;
-    width: 100%;
-}
-
-.float-right {
-    float: right;
-}
-
-.current {
-    background-color: #e7e7e7;
-}
-
-nav#main {
-    ul {
-        border-bottom: 1px solid #ccc;
-        border-top: 1px solid #ccc;
-        margin: 0;
-        padding: 0;
+    body {
+        font-family: Helvetica, sans-serif;
     }
-    li {
-        list-style: none;
-        display: inline-block;
-        padding: 1%;
+    
+    .header-container {
+        margin: auto;
+        max-width: 1000px;
+        width: 100%;
     }
-    li:hover {
-        text-decoration: underline;
+    
+    header {
+        img {
+            height: auto;
+            width: 100%;
+        }
     }
-    a {
+    
+    .float-right {
+        float: right;
+    }
+    
+    .current {
+        background-color: #e7e7e7;
+    }
+    
+    nav#main {
+        ul {
+            border-bottom: 1px solid #ccc;
+            border-top: 1px solid #ccc;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            padding: 1%;
+        }
+        li:hover {
+            text-decoration: underline;
+        }
+        a {
+            font-size: 12px;
+            text-decoration: none;
+            color: #777;
+            text-transform: uppercase;
+            line-height: 30px;
+        }
+    }
+    
+    li span#logud {
         font-size: 12px;
         text-decoration: none;
         color: #777;
         text-transform: uppercase;
         line-height: 30px;
     }
-}
-
-.main-container {
-    margin: auto;
-    max-width: 1000px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-main#index {
-    img {
+    
+    li span#logud:hover {
+        text-decoration: none !important;
+        cursor: default;
+    }
+    
+    .main-container {
+        margin: auto;
+        max-width: 1000px;
         width: 100%;
+        margin-top: 30px;
     }
-    aside {
-        a {
-            text-decoration: none;
-            i {
-                color: black;
-            }
-            i:hover {
-                color: blue;
-            }
-        }
-    }
-    p {
-        font-size: 12px;
-    }
-    article {
-        h1 {
-            text-transform: uppercase;
-            font-size: 20px;
-        }
+    
+    main#index {
         img {
             width: 100%;
         }
+        aside {
+            a {
+                text-decoration: none;
+                i {
+                    color: black;
+                }
+                i:hover {
+                    color: blue;
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+        }
+        article {
+            h1 {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 200;
+            }
+            img {
+                width: 100%;
+            }
+            p.author {
+                text-transform: uppercase;
+            }
+            span.author-C {
+                color: #777;
+            }
+        }
+        .formGroup {
+            padding: 10px 0;
+            span {
+                font-size: 20px;
+            }
+            input {
+                background-color: white;
+                padding: 5px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                width: 97%;
+                height: 25px;
+            }
+            textarea {
+                background-color: white;
+                padding: 5px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                width: 97%;
+                height: 40px;
+            }
+        }
+        .btn-indsaet {
+            input.button-primary {
+                background-color: white;
+                padding: 5px 0;
+                margin: 5px 0;
+                border: 1px solid grey;
+                border-radius: 5px;
+                font-size: 20px;
+                width: 150px;
+            }
+            input.button-primary:hover {
+                text-decoration: underline;
+            }
+        }
     }
-    .formGroup {
-        padding: 10px;
-        span {
-            font-size: 20px;
+    
+    main#loginsite {
+        label {
+            font-weight: bold;
+            margin: 10px 0;
         }
-        input {
-            background-color: white;
-            padding: 5px;
-            border: 1px solid grey;
-            border-radius: 5px;
-            width: 97%;
-            height: 25px;
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
-        textarea {
-            background-color: white;
-            padding: 5px;
-            border: 1px solid grey;
-            border-radius: 5px;
-            width: 97%;
-            height: 40px;
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
-    }
-    .btn-indsaet {
-        margin-left: 10px;
-        input.button-primary {
+        button {
             background-color: white;
             padding: 5px;
             margin: 5px 0;
             border: 1px solid grey;
-            border-radius: 5px;
             font-size: 20px;
             width: 150px;
         }
-        input.button-primary:hover {
+        button:hover {
             text-decoration: underline;
         }
     }
-}
-
-main#loginsite {
-    p {
-        margin: 0;
-        font-weight: bold;
+    
+    .footer-container {
+        margin: auto;
+        max-width: 1000px;
+        width: 100%;
     }
-    input.log-in-box {
-        background-color: white;
-        padding: 5px;
-        border: 1px solid grey;
-        border-radius: 5px;
-        width: 97%;
-        height: 25px;
+    
+    footer#index {
+        p {
+            text-transform: uppercase;
+        }
     }
-    button {
-        background-color: white;
-        padding: 5px;
-        margin: 5px 0;
-        border: 1px solid grey;
-        border-radius: 5px;
-        font-size: 20px;
-        width: 150px;
+    
+    @media screen and (max-width: 991px) {
+        li {
+            width: 100%;
+            padding: 1% 0 !important;
+        }
+        
+        .header-container {
+        padding: 0 0 0 1%;
     }
-    button:hover {
-        text-decoration: underline;
+        
+        .float-right {
+            float: none;
+        }
+        .main-container {
+            padding: 0 0 0 1%;
+        }
     }
-}
-
-.footer-container {
-    margin: auto;
-    max-width: 1000px;
-    width: 100%;
-}
-
-footer#index {
-    p {
-        text-transform: uppercase;
-    }
-}
