@@ -4,8 +4,12 @@
     <html lang="en">
 
     <head>
+        <!-- Charset -->
         <meta charset="UTF-8">
+        <!-- Log ind -->
         <title>Log ind</title>
+        <!-- Fav icon -->
+        <link rel="icon" href="camera-16.ico" type="image/gif" sizes="16x16">
         <!-- Keywords -->
         <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
         <!-- Description (max 150 chars) -->
@@ -56,7 +60,7 @@
                         <nav id="main">
                             <ul>
                                 <li><a href="index.php">Home</a></li>
-                                <li><a href="#">Planter</a></li>
+                                <li><a href="planter.php">Planter</a></li>
                                 <li><a href="#">Indretning</a></li>
                                 <li class="float-right current"><a href="loginsite.php">Log ind</a></li>
                             </ul>

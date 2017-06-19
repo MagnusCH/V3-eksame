@@ -173,6 +173,45 @@
             }
         }
         
+        main#planter {
+            img {
+                width: 100%;
+            }
+            aside {
+                a {
+                    text-decoration: none;
+                    i {
+                        color: black;
+                    }
+                    i:hover {
+                        color: blue;
+                    }
+                }
+            }
+            p {
+                font-size: 12px;
+            }
+            h2,
+            h3 {
+                font-weight: 200;
+            }
+            /* SLider */
+            .fadein {
+                position: relative;
+            }
+            .fadein img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .fadein img:not(:first-child) {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            /* Slider stop */
+        }
+        
         .footer-container {
             margin: auto;
             max-width: 1000px;

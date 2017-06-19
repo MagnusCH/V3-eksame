@@ -17,7 +17,7 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)){ ?>
         <hr>
         <h1><?php echo $row['heading'] ?></h1> <img src="img/<?php echo $row['imgSrc'] ?>.jpg" alt="<?php echo $row['imgAlt'] ?>">
         <p class="author"> <span class="author-C">Skrevet af</span>
-            <?php echo $_SESSION['username']; ?> <span class="author-C">Den</span>
+            <?php echo $_SESSION['username'] ?> <span class="author-C">Den</span>
                 <?php echo date('D-d-F-Y');
             //('r')?>
         </p>

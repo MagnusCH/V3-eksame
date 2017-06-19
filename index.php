@@ -4,8 +4,12 @@
     <html lang="en">
 
     <head>
+        <!-- Charset -->
         <meta charset="UTF-8">
+        <!-- Title -->
         <title>Wilderness - Line Andersen</title>
+        <!-- Fav icon -->
+        <link rel="icon" href="camera-16.ico" type="image/gif" sizes="16x16">
         <!-- Keywords -->
         <meta name="keywords" content="HTML, CSS, XML, XHTML, JavaScript">
         <!-- Description (max 150 chars) -->
@@ -56,7 +60,7 @@
                         <nav id="main">
                             <ul>
                                 <li class="current"><a href="index.php">Home</a></li>
-                                <li><a href="#">Planter</a></li>
+                                <li><a href="planter.php">Planter</a></li>
                                 <li><a href="#">Indretning</a></li>
                                 <?php 
                         //tjekker om username er sat og den ikke er tom
