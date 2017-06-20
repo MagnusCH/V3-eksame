@@ -156,7 +156,19 @@
                                         <textarea class="u-full-width" id "articleText" name="articleText" placeholder="Indlægets tekst"></textarea>
                                         <!-- Textarea end -->
                                     </div>
-                                    <!-- FormGroup-class /imgSrc end -->
+                                    <!-- FormGroup-class /articleText end -->
+                                    <!-- -->
+                                    <!-- FormGroup-class /forfatter -->
+                                    <div class="formGroup">
+                                        <!-- Label -->
+                                        <label for="forfatter"> <span>Forfatter:</span></label>
+                                        <!-- Lable end -->
+                                        <br>
+                                        <!-- Input -->
+                                        <input class="u-full-width" type="text" id="forfatter" name="forfatter" placeholder="Forfatterns navn her...">
+                                        <!-- Imput end -->
+                                    </div>
+                                    <!-- FormGroup-class /forfatter end -->
                                     <!-- -->
                                     <!-- Indsæt -->
                                     <div class="btn-indsaet">

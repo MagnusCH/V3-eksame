@@ -7,6 +7,7 @@
             max-width: 1000px;
             width: 100%;
         }
+        /* Header */
         
         header {
             img {
@@ -22,6 +23,7 @@
         .current {
             background-color: #e7e7e7;
         }
+        /* Nav */
         
         nav#main {
             ul {
@@ -66,6 +68,7 @@
             width: 100%;
             margin-top: 30px;
         }
+        /* Main index */
         
         main#index {
             img {
@@ -138,6 +141,7 @@
                 }
             }
         }
+        /* Login site */
         
         main#loginsite {
             label {
@@ -172,6 +176,7 @@
                 text-decoration: underline;
             }
         }
+        /* Planter */
         
         main#planter {
             img {
@@ -190,10 +195,19 @@
             }
             p {
                 font-size: 12px;
+                text-align: justify;
+            }
+            h1 {
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: 200;
             }
             h2,
             h3 {
+                text-transform: uppercase;
+                font-size: 20px;
                 font-weight: 200;
+                text-align: center;
             }
             /* SLider */
             .fadein {
@@ -211,6 +225,7 @@
             }
             /* Slider stop */
         }
+        /* Footer */
         
         .footer-container {
             margin: auto;
@@ -229,13 +244,9 @@
                 width: 100%;
                 padding: 1% 0 !important;
             }
-            .header-container {
-                padding: 0 0 0 1%;
-            }
+            .header-container {}
             .float-right {
                 float: none;
             }
-            .main-container {
-                padding: 0 1%;
-            }
+            .main-container {}
         }

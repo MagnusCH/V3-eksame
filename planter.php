@@ -102,19 +102,20 @@
                     <!-- Col 2 -->
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                         <hr>
+                        <h1>Planter</h1>
                         <div class="slider">
                             <div class="fadein"> <img src="img/femina_planter.jpg" alt="Femina planter på stang"> <img src="img/femina_planter2.jpg" alt="Femina planter på vaeg"> <img src="img/femina_planter3.jpg" alt="Femina planter i potter"></div>
-                            <div class="row center-xs">
-                                <div class="col-xs-6">
+                            <div class="row center-xs center-sm">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <article id="planter">
                                         <h2>Planter Planter</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus necessitatibus, dolore deleniti nesciunt, nam beatae, eos illum ipsam illo neque ex velit veritatis error ea aut. Labore, laudantium repudiandae nulla.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eius vitae unde magni dolor, accusantium quam itaque aut, autem est similique numquam quo dolore repellendus fugit rem nam quidem. Nihil!</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eius vitae unde magni dolor, accusantium quam itaque aut, autem est similique numquam quo dolore repellendus fugit rem nam quidem. Nihil!</p> <img src="img/femina_planter5.jpg" alt="">
                                         <h3>Lorem ipsum</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora id fuga ipsa alias facere dignissimos tempore veritatis, rem ea quam. Sit amet totam recusandae tenetur beatae natus in sed veritatis. </p>
                                     </article>
                                 </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">">
                                     <article id="planter">
                                         <h2>Planter Planter</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis minus quos dolorum, maiores quas delectus quam ab, quibusdam voluptatum labore doloribus, magnam consequatur. Rerum suscipit iusto, nulla nisi sunt hic!</p> <img src="img/femina_planter4.jpg" alt="plante potter på vaeg">
