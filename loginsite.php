@@ -7,7 +7,7 @@
         <!-- Charset -->
         <meta charset="UTF-8">
         <!-- Log ind -->
-        <title>Log ind</title>
+        <title>Log ind - Wilderness</title>
         <!-- Fav icon -->
         <link rel="icon" href="camera-16.ico" type="image/gif" sizes="16x16">
         <!-- Keywords -->

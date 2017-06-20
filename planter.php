@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 <?php session_start();
 ?>
+    <!DOCTYPE html>
+    <html lang="en">
     <!DOCTYPE html>
     <html lang="en">
 
@@ -9,7 +9,7 @@
         <!-- Charset -->
         <meta charset="UTF-8">
         <!-- Title -->
-        <title>Planter</title>
+        <title>Planter - Wilderness</title>
         <!-- Fav icon -->
         <link rel="icon" href="camera-16.ico" type="image/gif" sizes="16x16">
         <!-- Keywords -->
