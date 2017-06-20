@@ -41,9 +41,26 @@
             ga('create', 'UA-92498399-1', 'auto');
             ga('send', 'pageview');
         </script>
+        <!-- Hotjar Tracking Code www.eksample.com -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj = || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+                h._hjSettings = {
+                    hjid: 1
+                    , hjsv: 5
+                };
+                a = o.getElementsByTagName('head')[0];
+                r = o.createElement('script');
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, '//static.hotjar.con(c(hotjar-', '.js?sv=');
+        </script>
     </head>
 
-    <body>
+    <body id="loginsite">
         <!-- Header -->
         <header id="main">
             <div class="header-container">
@@ -89,7 +106,7 @@
             </div>
         </main>
         <!-- Footer -->
-        <footer id="index">
+        <footer id="loginsite">
             <div class="footer-container">
                 <hr>
                 <div class="row center-xs">

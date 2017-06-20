@@ -1,54 +1,58 @@
 /* line 1, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 body {
-  font-family: Helvetica, sans-serif; }
+  font-family: Helvetica, sans-serif;
+  background: url(../img/brickwall-edit.jpg); }
 
-/* line 5, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 6, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 .header-container {
   margin: auto;
   max-width: 1000px;
   width: 100%; }
 
 /* Header */
-/* line 13, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-header img {
-  height: auto;
-  width: 100%; }
+/* line 15, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+header {
+  background-color: #fff; }
+  /* line 17, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  header img {
+    height: auto;
+    width: 100%; }
 
-/* line 19, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 23, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 .float-right {
   float: right; }
 
-/* line 23, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 27, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 .current {
   background-color: #e7e7e7; }
 
 /* Nav */
-/* line 29, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-nav#main ul {
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
-  margin: 0;
-  padding: 0; }
+/* line 34, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+nav#main {
+  background-color: #fff; }
+  /* line 36, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  nav#main ul {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0; }
+  /* line 42, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  nav#main li {
+    list-style: none;
+    display: inline-block;
+    padding: 1%; }
+  /* line 48, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  nav#main a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    line-height: 30px; }
+  /* line 55, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  nav#main a:hover {
+    text-decoration: underline; }
 
-/* line 35, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-nav#main li {
-  list-style: none;
-  display: inline-block;
-  padding: 1%; }
-
-/* line 40, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-nav#main li:hover {
-  text-decoration: underline; }
-
-/* line 43, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-nav#main a {
-  font-size: 12px;
-  text-decoration: none;
-  color: #777;
-  text-transform: uppercase;
-  line-height: 30px; }
-
-/* line 52, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 60, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 li span#logud {
   font-size: 12px;
   text-decoration: none;
@@ -56,62 +60,69 @@ li span#logud {
   text-transform: uppercase;
   line-height: 30px; }
 
-/* line 60, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 68, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 li span#logud:hover {
   text-decoration: none !important;
   cursor: default; }
 
-/* line 65, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 73, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 .main-container {
+  background-color: #fff;
   margin: auto;
   max-width: 1000px;
   width: 100%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52); }
 
 /* Main index */
-/* line 74, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 88, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index img {
   width: 100%; }
 
-/* line 78, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-main#index aside a {
-  text-decoration: none; }
-  /* line 80, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-  main#index aside a i {
-    color: black; }
-  /* line 83, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-  main#index aside a i:hover {
-    color: blue; }
+/* line 91, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+main#index aside {
+  padding: 10px; }
+  /* line 93, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#index aside a {
+    text-decoration: none; }
+    /* line 95, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+    main#index aside a i {
+      color: black; }
+    /* line 98, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+    main#index aside a i:hover {
+      color: blue; }
 
-/* line 88, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 103, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index p {
   font-size: 12px; }
 
-/* line 92, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-main#index article h1 {
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 200; }
+/* line 106, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+main#index article {
+  padding: 10px; }
+  /* line 108, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#index article h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200; }
+  /* line 113, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#index article img {
+    width: 100%; }
+  /* line 116, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#index article p.author {
+    text-transform: uppercase; }
+  /* line 119, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#index article span.author-C {
+    color: #777; }
 
-/* line 97, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-main#index article img {
-  width: 100%; }
-
-/* line 100, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-main#index article p.author {
-  text-transform: uppercase; }
-
-/* line 103, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-main#index article span.author-C {
-  color: #777; }
-
-/* line 107, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 123, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index .formGroup {
   padding: 10px 0; }
-  /* line 109, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 125, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#index .formGroup span {
     font-size: 20px; }
-  /* line 112, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 128, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#index .formGroup input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -119,7 +130,7 @@ main#index .formGroup {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; }
-  /* line 120, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 136, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#index .formGroup textarea {
     width: 100%;
     padding: 12px 20px;
@@ -128,7 +139,7 @@ main#index .formGroup {
     border-radius: 4px;
     box-sizing: border-box; }
 
-/* line 130, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 146, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index .btn-indsaet input.button-primary {
   background-color: white;
   padding: 5px 0;
@@ -138,17 +149,21 @@ main#index .btn-indsaet input.button-primary {
   font-size: 20px;
   width: 150px; }
 
-/* line 139, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 155, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#index .btn-indsaet input.button-primary:hover {
   text-decoration: underline; }
 
 /* Login site */
-/* line 147, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 164, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+body#loginsite {
+  background: white; }
+
+/* line 169, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#loginsite label {
   font-weight: bold;
   margin: 10px 0; }
 
-/* line 151, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 173, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#loginsite input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -157,7 +172,7 @@ main#loginsite input[type=text] {
   border-radius: 4px;
   box-sizing: border-box; }
 
-/* line 159, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 181, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#loginsite input[type=password] {
   width: 100%;
   padding: 12px 20px;
@@ -166,7 +181,7 @@ main#loginsite input[type=password] {
   border-radius: 4px;
   box-sizing: border-box; }
 
-/* line 167, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 189, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#loginsite button {
   background-color: white;
   padding: 5px;
@@ -175,75 +190,120 @@ main#loginsite button {
   font-size: 20px;
   width: 150px; }
 
-/* line 175, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 197, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#loginsite button:hover {
   text-decoration: underline; }
 
 /* Planter */
-/* line 181, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 205, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 main#planter {
   /* SLider */
   /* Slider stop */ }
-  /* line 182, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 206, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter img {
     width: 100%; }
-  /* line 186, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-  main#planter aside a {
-    text-decoration: none; }
-    /* line 188, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-    main#planter aside a i {
-      color: black; }
-    /* line 191, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
-    main#planter aside a i:hover {
-      color: blue; }
-  /* line 196, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 209, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#planter aside {
+    padding: 10px; }
+    /* line 211, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+    main#planter aside a {
+      text-decoration: none; }
+      /* line 213, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+      main#planter aside a i {
+        color: black; }
+      /* line 216, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+      main#planter aside a i:hover {
+        color: blue; }
+  /* line 221, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter p {
-    font-size: 12px;
+    font-size: 12px; }
+  /* line 224, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#planter article {
+    padding: 10px; }
+  /* line 227, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#planter article p {
     text-align: justify; }
-  /* line 200, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 230, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter h1 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 200; }
-  /* line 205, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 235, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter h2,
   main#planter h3 {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 200;
     text-align: center; }
-  /* line 213, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 243, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#planter .slider {
+    padding: 10px; }
+  /* line 246, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter .fadein {
     position: relative; }
-  /* line 216, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 249, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter .fadein img {
     display: block;
     width: 100%;
     height: auto; }
-  /* line 221, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 254, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   main#planter .fadein img:not(:first-child) {
     position: absolute;
     left: 0;
     top: 0; }
 
 /* Footer */
-/* line 230, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 265, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 .footer-container {
+  background-color: #fff;
   margin: auto;
   max-width: 1000px;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52); }
 
-/* line 237, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+/* line 276, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+main#loginsite .main-container {
+  box-shadow: none; }
+
+/* line 282, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+footer#loginsite .footer-container {
+  background-color: #fff;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: none; }
+
+/* line 292, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
 footer#index p {
   text-transform: uppercase; }
 
 @media screen and (max-width: 991px) {
-  /* line 243, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 298, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  body {
+    background: white; }
+  /* line 301, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  nav {
+    padding: 10px; }
+  /* line 304, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   li {
     width: 100%;
     padding: 1% 0 !important; }
-  /* line 248, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  /* line 309, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
   .float-right {
-    float: none; } }
+    float: none; }
+  /* line 312, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  .main-container {
+    box-shadow: none; }
+  /* line 316, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#planter h1 {
+    padding: 10px; }
+  /* line 320, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  main#loginsite {
+    padding: 10px; }
+  /* line 323, ../../xampp/htdocs/v3_eksame/V3-eksame/css/style.scss */
+  .footer-container {
+    box-shadow: none; } }
 
 /*# sourceMappingURL=style.css.map */

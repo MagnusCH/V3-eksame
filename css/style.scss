@@ -1,252 +1,326 @@
-        body {
-            font-family: Helvetica, sans-serif;
-        }
-        
-        .header-container {
-            margin: auto;
-            max-width: 1000px;
-            width: 100%;
-        }
-        /* Header */
-        
-        header {
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-        
-        .float-right {
-            float: right;
-        }
-        
-        .current {
-            background-color: #e7e7e7;
-        }
-        /* Nav */
-        
-        nav#main {
-            ul {
-                border-bottom: 1px solid #ccc;
-                border-top: 1px solid #ccc;
-                margin: 0;
-                padding: 0;
-            }
-            li {
-                list-style: none;
-                display: inline-block;
-                padding: 1%;
-            }
-            li:hover {
-                text-decoration: underline;
-            }
-            a {
-                font-size: 12px;
-                text-decoration: none;
-                color: #777;
-                text-transform: uppercase;
-                line-height: 30px;
-            }
-        }
-        
-        li span#logud {
-            font-size: 12px;
+body {
+    font-family: Helvetica, sans-serif;
+    background: url(../img/brickwall-edit.jpg);
+}
+
+.header-container {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+
+/* Header */
+
+header {
+    background-color: #fff;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.float-right {
+    float: right;
+}
+
+.current {
+    background-color: #e7e7e7;
+}
+
+
+/* Nav */
+
+nav#main {
+    background-color: #fff;
+    ul {
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+        display: inline-block;
+        padding: 1%;
+    }
+    li:hover {}
+    a {
+        font-size: 12px;
+        text-decoration: none;
+        color: #777;
+        text-transform: uppercase;
+        line-height: 30px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+li span#logud {
+    font-size: 12px;
+    text-decoration: none;
+    color: #777;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+li span#logud:hover {
+    text-decoration: none !important;
+    cursor: default;
+}
+
+.main-container {
+    background-color: #fff;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 30px;
+    -webkit-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+}
+
+
+/* Main index */
+
+main#index {
+    img {
+        width: 100%;
+    }
+    aside {
+        padding: 10px;
+        a {
             text-decoration: none;
-            color: #777;
+            i {
+                color: black;
+            }
+            i:hover {
+                color: blue;
+            }
+        }
+    }
+    p {
+        font-size: 12px;
+    }
+    article {
+        padding: 10px;
+        h1 {
             text-transform: uppercase;
-            line-height: 30px;
+            font-size: 20px;
+            font-weight: 200;
         }
-        
-        li span#logud:hover {
-            text-decoration: none !important;
-            cursor: default;
-        }
-        
-        .main-container {
-            margin: auto;
-            max-width: 1000px;
-            width: 100%;
-            margin-top: 30px;
-        }
-        /* Main index */
-        
-        main#index {
-            img {
-                width: 100%;
-            }
-            aside {
-                a {
-                    text-decoration: none;
-                    i {
-                        color: black;
-                    }
-                    i:hover {
-                        color: blue;
-                    }
-                }
-            }
-            p {
-                font-size: 12px;
-            }
-            article {
-                h1 {
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    font-weight: 200;
-                }
-                img {
-                    width: 100%;
-                }
-                p.author {
-                    text-transform: uppercase;
-                }
-                span.author-C {
-                    color: #777;
-                }
-            }
-            .formGroup {
-                padding: 10px 0;
-                span {
-                    font-size: 20px;
-                }
-                input[type=text] {
-                    width: 100%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                }
-                textarea {
-                    width: 100%;
-                    padding: 12px 20px;
-                    margin: 8px 0;
-                    border: 1px solid #ccc;
-                    border-radius: 4px;
-                    box-sizing: border-box;
-                }
-            }
-            .btn-indsaet {
-                input.button-primary {
-                    background-color: white;
-                    padding: 5px 0;
-                    margin: 5px 0;
-                    border: 1px solid grey;
-                    border-radius: 5px;
-                    font-size: 20px;
-                    width: 150px;
-                }
-                input.button-primary:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-        /* Login site */
-        
-        main#loginsite {
-            label {
-                font-weight: bold;
-                margin: 10px 0;
-            }
-            input[type=text] {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-            input[type=password] {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
-            button {
-                background-color: white;
-                padding: 5px;
-                margin: 5px 0;
-                border: 1px solid grey;
-                font-size: 20px;
-                width: 150px;
-            }
-            button:hover {
-                text-decoration: underline;
-            }
-        }
-        /* Planter */
-        
-        main#planter {
-            img {
-                width: 100%;
-            }
-            aside {
-                a {
-                    text-decoration: none;
-                    i {
-                        color: black;
-                    }
-                    i:hover {
-                        color: blue;
-                    }
-                }
-            }
-            p {
-                font-size: 12px;
-                text-align: justify;
-            }
-            h1 {
-                text-transform: uppercase;
-                font-size: 20px;
-                font-weight: 200;
-            }
-            h2,
-            h3 {
-                text-transform: uppercase;
-                font-size: 20px;
-                font-weight: 200;
-                text-align: center;
-            }
-            /* SLider */
-            .fadein {
-                position: relative;
-            }
-            .fadein img {
-                display: block;
-                width: 100%;
-                height: auto;
-            }
-            .fadein img:not(:first-child) {
-                position: absolute;
-                left: 0;
-                top: 0;
-            }
-            /* Slider stop */
-        }
-        /* Footer */
-        
-        .footer-container {
-            margin: auto;
-            max-width: 1000px;
+        img {
             width: 100%;
         }
-        
-        footer#index {
-            p {
-                text-transform: uppercase;
+        p.author {
+            text-transform: uppercase;
+        }
+        span.author-C {
+            color: #777;
+        }
+    }
+    .formGroup {
+        padding: 10px 0;
+        span {
+            font-size: 20px;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+    .btn-indsaet {
+        input.button-primary {
+            background-color: white;
+            padding: 5px 0;
+            margin: 5px 0;
+            border: 1px solid grey;
+            border-radius: 5px;
+            font-size: 20px;
+            width: 150px;
+        }
+        input.button-primary:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/* Login site */
+
+body#loginsite {
+    background: white;
+}
+
+main#loginsite {
+    label {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: white;
+        padding: 5px;
+        margin: 5px 0;
+        border: 1px solid grey;
+        font-size: 20px;
+        width: 150px;
+    }
+    button:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* Planter */
+
+main#planter {
+    img {
+        width: 100%;
+    }
+    aside {
+        padding: 10px;
+        a {
+            text-decoration: none;
+            i {
+                color: black;
+            }
+            i:hover {
+                color: blue;
             }
         }
-        
-        @media screen and (max-width: 991px) {
-            li {
-                width: 100%;
-                padding: 1% 0 !important;
-            }
-            .header-container {}
-            .float-right {
-                float: none;
-            }
-            .main-container {}
+    }
+    p {
+        font-size: 12px;
+    }
+    article {
+        padding: 10px;
+    }
+    article p {
+        text-align: justify;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    h2,
+    h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 200;
+        text-align: center;
+    }
+    /* SLider */
+    .slider {
+        padding: 10px;
+    }
+    .fadein {
+        position: relative;
+    }
+    .fadein img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .fadein img:not(:first-child) {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    /* Slider stop */
+}
+
+
+/* Footer */
+
+.footer-container {
+    background-color: #fff;
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+}
+
+main#loginsite {
+    .main-container {
+        box-shadow: none;
+    }
+}
+
+footer#loginsite {
+    .footer-container {
+        background-color: #fff;
+        margin: auto;
+        max-width: 1000px;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+footer#index {
+    p {
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    body {
+        background: white;
+    }
+    nav {
+        padding: 10px;
+    }
+    li {
+        width: 100%;
+        padding: 1% 0 !important;
+    }
+    .header-container {}
+    .float-right {
+        float: none;
+    }
+    .main-container {
+        box-shadow: none;
+    }
+    main#planter {
+        h1 {
+            padding: 10px;
         }
+    }
+    main#loginsite {
+        padding: 10px;
+    }
+    .footer-container {
+        box-shadow: none;
+    }
+}
