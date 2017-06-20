@@ -7,6 +7,8 @@ require_once "connect.php";
 $statement = $DBH->prepare("SELECT * FROM articles");
 $statement->execute();
 
+
+//Her bliver artiklen lavet udfra de informationer som databasen har modtaget
 // laver en variabel $row som indenholder:
 //FETCH_ASSOC betyder: at det bliver hentet som assiautaiv array, hvilket gør at det kommer ud i key value pair, [imgSrc] er key og billedet er value. altså der er en beskrivelse(key) og værdi ( value)
 // fetch hiver alt ud som ligger inde i $statement

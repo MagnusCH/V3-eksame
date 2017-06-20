@@ -118,7 +118,6 @@
                     </div>
                     <!-- Col 2 -->
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                        <hr>
                         <h1>Planter</h1>
                         <div class="slider">
                             <div class="fadein"> <img src="img/femina_planter.jpg" alt="Femina planter på stang"> <img src="img/femina_planter2.jpg" alt="Femina planter på vaeg"> <img src="img/femina_planter3.jpg" alt="Femina planter i potter"></div>

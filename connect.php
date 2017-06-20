@@ -10,7 +10,9 @@ $dbUsername ="root";
 // password til databasen
 $dbPassword ="";
 
-// PDO = php data object: En måde hvor man kan arbejde med php object orienteret
+
+//her opretter jeg forbindelse til min database ved hjælp af klassen PDO
+// PDO = php data object: En måde hvor man kan arbejde med php object 
 
 try{
     // $DHB = database handler, man man kunne også bare have brugt ost
@@ -18,7 +20,7 @@ try{
     // host=$host, hvilken host det er
     // altså vi angiver vores variabler
     // charset giver utf8
-    // array: alt hvad man sætter ind i arry'et bliver lavet om til utf8
+    // array: alt hvad man sætter ind i array'et bliver lavet om til utf8
     $DBH = new PDO("mysql:dbname=$dbName;host=$host;charset=utf8", $dbUsername, $dbPassword, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8") );
     // -> man vil anvende en metode som høre til $DBH
     // hvis der kommer en fejl vil vi have den udskrevet så vi kan håndtere/Se den

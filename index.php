@@ -162,6 +162,17 @@
                                         <!-- Imput end -->
                                     </div>
                                     <!-- FormGroup-class /imgAlt end -->
+                                    <!-->
+                                    <!-- FormGroup-class /Forfatter -->
+                                    <!-- <div class="formGroup">
+                                        <!-- Label -->
+                                    <!-- <label for="imgAlt"> <span>Forfatter:</span></label>
+                                        <!-- Lable end -->
+                                    <!--<br>
+                                        <!-- Input -->
+                                    <!--<input class="u-full-width" type="text" id="forfatter" name="forfatter" placeholder="Forfatterens navn her">
+                                        <!-- Imput end -->
+                                    <!-- FormGroup-class /Forfatter end -->
                                     <!-- -->
                                     <!-- FormGroup-class /articleText -->
                                     <div class="formGroup">
@@ -174,18 +185,6 @@
                                         <!-- Textarea end -->
                                     </div>
                                     <!-- FormGroup-class /articleText end -->
-                                    <!-- -->
-                                    <!-- FormGroup-class /forfatter -->
-                                    <div class="formGroup">
-                                        <!-- Label -->
-                                        <label for="forfatter"> <span>Forfatter:</span></label>
-                                        <!-- Lable end -->
-                                        <br>
-                                        <!-- Input -->
-                                        <input class="u-full-width" type="text" id="forfatter" name="forfatter" placeholder="Forfatterns navn her...">
-                                        <!-- Imput end -->
-                                    </div>
-                                    <!-- FormGroup-class /forfatter end -->
                                     <!-- -->
                                     <!-- Indsæt -->
                                     <div class="btn-indsaet">
