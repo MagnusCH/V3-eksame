@@ -76,15 +76,16 @@
                     <div class="col-xs-12">
                         <nav id="main">
                             <ul>
-                                <li><a href="index.php">Home</a></li>
-                                <li><a href="planter.php">Planter</a></li>
-                                <li><a href="#">Indretning</a></li>
-                                <li class="float-right current"><a href="loginsite.php">Log ind</a></li>
+                                <li><a href="index.php" alt="home">Home</a></li>
+                                <li><a href="planter.php" alt="planter">Planter</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" alt="indretning">Indretning</a></li>
+                                <li class="float-right current"><a href="loginsite.php" alt="log ind">Log ind</a></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
         </header>
+        <!-- Main -->
         <main id="loginsite">
             <div class="main-container">
                 <div class="row">

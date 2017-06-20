@@ -76,27 +76,28 @@
                     <div class="col-xs-12">
                         <nav id="main">
                             <ul>
-                                <li class="current"><a href="index.php">Home</a></li>
-                                <li><a href="planter.php">Planter</a></li>
-                                <li><a href="#">Indretning</a></li>
+                                <li class="current"><a href="index.php" alt="home">Home</a></li>
+                                <li><a href="planter.php" alt="planter">Planter</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" alt="inndretning">Indretning</a></li>
                                 <?php 
                         //tjekker om username er sat og den ikke er tom
                         //hvis bruger er logget ind skal nedstående vises
                         if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
                          ?>
                                     <li class="float-right"><span id="logud">Hej,
-                                        <?php echo $_SESSION['username']; ?>,</span> <a href="logout.php?logout=true"> Log ud</a> </li>
+                                        <?php echo $_SESSION['username']; ?>,</span> <a href="logout.php?  logout=true" alt="log ud"> Log ud</a> </li>
                                     <?php   
                         }else {
                         ?>
                                         <!-- Hvis bruger ikke er logget ind skal nedstående vises -->
-                                        <li class="float-right"><a href="loginsite.php">Log ind</a></li>
+                                        <li class="float-right"><a href="loginsite.php" alt="log ind">Log ind</a></li>
                                         <?php } ?>
                             </ul>
                         </nav>
                     </div>
                 </div>
         </header>
+        <!-- Main -->
         <main id="index">
             <div class="main-container">
                 <div class="row">

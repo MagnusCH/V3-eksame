@@ -3,10 +3,29 @@ body {
     background: url(../img/brickwall-edit.jpg);
 }
 
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200;
+}
+
 .header-container {
     margin: auto;
     max-width: 1000px;
     width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid lightgray;
+}
+
+article,
+aside {
+    padding: 10px;
 }
 
 
@@ -15,8 +34,7 @@ body {
 header {
     background-color: #fff;
     img {
-        height: auto;
-        width: 100%;
+        border: none;
     }
 }
 
@@ -85,11 +103,7 @@ li span#logud:hover {
 /* Main index */
 
 main#index {
-    img {
-        width: 100%;
-    }
     aside {
-        padding: 10px;
         a {
             text-decoration: none;
             i {
@@ -104,15 +118,6 @@ main#index {
         font-size: 12px;
     }
     article {
-        padding: 10px;
-        h1 {
-            text-transform: uppercase;
-            font-size: 20px;
-            font-weight: 200;
-        }
-        img {
-            width: 100%;
-        }
         p.author {
             text-transform: uppercase;
         }
@@ -166,6 +171,9 @@ body#loginsite {
 }
 
 main#loginsite {
+    .main-container {
+        box-shadow: none;
+    }
     label {
         font-weight: bold;
         margin: 10px 0;
@@ -203,11 +211,7 @@ main#loginsite {
 /* Planter */
 
 main#planter {
-    img {
-        width: 100%;
-    }
     aside {
-        padding: 10px;
         a {
             text-decoration: none;
             i {
@@ -221,22 +225,11 @@ main#planter {
     p {
         font-size: 12px;
     }
-    article {
-        padding: 10px;
-    }
     article p {
         text-align: justify;
     }
-    h1 {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 200;
-    }
     h2,
     h3 {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 200;
         text-align: center;
     }
     /* SLider */
@@ -248,8 +241,6 @@ main#planter {
     }
     .fadein img {
         display: block;
-        width: 100%;
-        height: auto;
     }
     .fadein img:not(:first-child) {
         position: absolute;
@@ -267,14 +258,14 @@ main#planter {
     margin: auto;
     max-width: 1000px;
     width: 100%;
-    -webkit-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
-    -moz-box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
-    box-shadow: 0px 0px 21px 8px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: -1px 25px 44px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 25px 44px 5px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 25px 44px 5px rgba(0, 0, 0, 0.75);
 }
 
-main#loginsite {
-    .main-container {
-        box-shadow: none;
+footer#index {
+    p {
+        text-transform: uppercase;
     }
 }
 
@@ -285,12 +276,6 @@ footer#loginsite {
         max-width: 1000px;
         width: 100%;
         box-shadow: none;
-    }
-}
-
-footer#index {
-    p {
-        text-transform: uppercase;
     }
 }
 
@@ -305,7 +290,6 @@ footer#index {
         width: 100%;
         padding: 1% 0 !important;
     }
-    .header-container {}
     .float-right {
         float: none;
     }

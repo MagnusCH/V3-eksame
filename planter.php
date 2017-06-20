@@ -78,16 +78,16 @@
                     <div class="col-xs-12">
                         <nav id="main">
                             <ul>
-                                <li><a href="index.php">Home</a></li>
-                                <li class="current"><a href="planter.php">Planter</a></li>
-                                <li><a href="#">Indretning</a></li>
+                                <li><a href="index.php" alt="home">Home</a></li>
+                                <li class="current"><a href="planter.php" alt="planter">Planter</a></li>
+                                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" alt="indretning">Indretning</a></li>
                                 <?php 
                         //tjekker om username er sat og den ikke er tom
                         //hvis bruger er logget ind skal nedstående vises
                         if(isset($_SESSION['username']) && !empty($_SESSION['username'])){
                          ?>
                                     <li class="float-right"><span id="logud">Hej,
-                                        <?php echo $_SESSION['username']; ?>,</span> <a href="logout.php?logout=true"> Log ud</a> </li>
+                                        <?php echo $_SESSION['username']; ?>,</span> <a href="logout.php?logout=true" alt="log ud"> Log ud</a> </li>
                                     <?php   
                         }else {
                         ?>
@@ -99,8 +99,10 @@
                     </div>
                 </div>
         </header>
+        <!-- Main -->
         <main id="planter">
             <div class="main-container">
+                <!-- Row -->
                 <div class="row">
                     <!-- Col 1 -->
                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
@@ -119,19 +121,23 @@
                     <!-- Col 2 -->
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                         <h1>Planter</h1>
+                        <!-- Slider -->
                         <div class="slider">
                             <div class="fadein"> <img src="img/femina_planter.jpg" alt="Femina planter på stang"> <img src="img/femina_planter2.jpg" alt="Femina planter på vaeg"> <img src="img/femina_planter3.jpg" alt="Femina planter i potter"></div>
+                            <!-- Row -->
                             <div class="row center-xs center-sm">
+                                <!-- col 1 -->
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <article id="planter">
                                         <h2>Planter Planter</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus necessitatibus, dolore deleniti nesciunt, nam beatae, eos illum ipsam illo neque ex velit veritatis error ea aut. Labore, laudantium repudiandae nulla.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eius vitae unde magni dolor, accusantium quam itaque aut, autem est similique numquam quo dolore repellendus fugit rem nam quidem. Nihil!</p> <img src="img/femina_planter5.jpg" alt="">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime eius vitae unde magni dolor, accusantium quam itaque aut, autem est similique numquam quo dolore repellendus fugit rem nam quidem. Nihil!</p> <img src="img/femina_planter5.jpg" alt="Plante i potte">
                                         <h3>Lorem ipsum</h3>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora id fuga ipsa alias facere dignissimos tempore veritatis, rem ea quam. Sit amet totam recusandae tenetur beatae natus in sed veritatis. </p>
                                     </article>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">">
+                                <!-- col 2-->
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <article id="planter">
                                         <h2>Planter Planter</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis minus quos dolorum, maiores quas delectus quam ab, quibusdam voluptatum labore doloribus, magnam consequatur. Rerum suscipit iusto, nulla nisi sunt hic!</p> <img src="img/femina_planter4.jpg" alt="plante potter på vaeg">
